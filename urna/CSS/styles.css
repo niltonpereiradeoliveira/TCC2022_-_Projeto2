@@ -112,6 +112,7 @@ body{
 }
 
 .num{
+    margin-top: 15px;
     display: inline-block;
     width: 30px;
     height: 40px;
@@ -128,6 +129,7 @@ body{
 }
 
 .d1-l-4{
+    margin-top: 30px;
     flex: 1;
     line-height: 50px;
 }
