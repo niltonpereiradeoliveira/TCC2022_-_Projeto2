@@ -1,0 +1,153 @@
+@keyframes pisca{
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
+body{
+    margin: 0px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.eletronic-screen{
+    display: flex;
+    background-color: rgb(219,213,201);
+    padding: 30px;
+}
+
+.screen{
+    width: 500px;
+    height: 420px;
+    background: linear-gradient(to rigth, #e8e8e8, #c1c1c1);
+    border: 2px solid rgb(85,85,85);
+    display: flex;
+    flex-direction: column;
+}
+
+.keyboard{
+    padding-top: 70px;
+    margin-left: 30px;
+    background-color: rgb(64,58,58);
+}
+
+.keyboard-lin{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.keys-btn, .keys-btn-white, .keys-btn-correct, .keys-btn-confirm{
+    width: 70px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px rgb(85,85,85);
+
+}
+
+.keys-btn-white{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+}
+
+.keys-btn-correct{
+    background-color: rgb(240,144,70);
+    color: black;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+}
+
+.keys-btn-confirm{
+    background-color: rgb(72,192,121);
+    color: black;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+}
+
+/* Estilizando a tela */
+
+.d1{
+    flex: 1;
+    display: flex;
+}
+
+.d1-l{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.d1-l-1{
+    height: 50px;
+    display: flexbox;
+    align-items: center;
+}
+
+.d1-l-2{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.d1-l-3{
+    height: 40px;
+}
+
+.num{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 40px;
+    font-size: 40px;
+}
+
+.pisca{
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.d1-l-4{
+    flex: 1;
+    line-height: 50px;
+}
+
+.d1-r{
+    /* width: 90px; */
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    }
+
+.d1-r-img{
+    padding-top: 40px;
+    text-align: center;
+}
+
+.d2{
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px solid black;
+    padding-left: 10px;
+}
